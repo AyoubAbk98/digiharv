@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./assets/images/favicon.svg">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+        <title>Digiharv - Harvest the power of the digital age.</title>
+    </head>
+    <body>
+        <header class="container" x-data="{mobileNavOpen: false}">
+            <nav>
+                <div class="logo">
+                    <div></div>
+                    <img src="./assets/images/logo-invert.svg" alt="">
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+                <button @click="mobileNavOpen = !mobileNavOpen">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div class="mobile-nav" x-show="mobileNavOpen">
+                    <ul>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="hero">
+                <div>
+                    <h1>Harvest the power of the digital age</h1>
+                    <h3>Digiharv is a digital ecosystem of different apps, tools, and services that allow you to manage your agriculture business easily from anywhere.</h3>
+                    <div class="cta">
+                        <button>Sign up</button>
+                        <button class="btn-secondary">Learn more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-background-container">
+                <div>something</div>
+                <video src="./assets/videos/field.mp4"
+                    poster="./assets/images/background-video-poster.jpg"
+                    autoplay
+                    loop
+                    muted></video>
+            </div>
+        </header>
+
+        <section class="features container">
+            <div class="feature-info fast">
+                <div>
+                    <h2>Fast</h2>
+                    <p>A fast and truly responsive suit of apps and systems that allow you to get things done quick.</p>
+                </div>
+            </div>
+            <div class="feature-art fast">
+                <div></div>
+                <div></div>
+                <img src="./assets/images/fast-invert.svg" alt="">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="feature-art reliable">
+                <div></div>
+                <div></div>
+                <img src="./assets/images/reliable-invert.svg" alt="">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="feature-info reliable">
+                <div>
+                    <h2>Reliable</h2>
+                    <p>A Robust and well maintained platform that you can depend on. </p>
+                </div>
+            </div>
+
+            <div class="feature-info accessible">
+                <div>
+                    <h2>Accessible</h2>
+                    <p>A wide range of supported operating systems and devices that allow you access from anywhere.</p>
+                </div>
+            </div>
+            <div class="feature-art accessible">
+                <div></div>
+                <div></div>
+                <img src="./assets/images/accessible-invert.svg" alt="">
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="testimonials container">
+            <div class="testimony">
+                <img src="./assets/images/jason.png" alt="Profile picture">
+                <div class="testimony-content">
+                    <div>
+                        <div class="full-name">Jason Sima</div>
+                        <div class="username">@Jason_A_Sima</div>
+                    </div>
+                    <p>The fact that I can just open the Digiharv app on my phone and get a full overview of everything about my fields is just... Beautiful.</p>
+                </div>
+            </div>
+            <div class="testimony">
+                <img src="./assets/images/amanda.png" alt="Profile picture">
+                <div class="testimony-content">
+                    <div>
+                        <div class="full-name">Amanda Hughes</div>
+                        <div class="username">@_amandah1</div>
+                    </div>
+                    <p>I do love spending time in my greenhouse among my plants, but being able to take care of using my laptop when I’m away is a real convenience.</p>
+                </div>
+            </div>
+            <div class="testimony">
+                <img src="./assets/images/adam.png" alt="Profile picture">
+                <div class="testimony-content">
+                    <div>
+                        <div class="full-name">Adam Hubbard</div>
+                        <div class="username">@electricAfruit</div>
+                    </div>
+                    <p>Using Digiharv to manage my farm makes seem almost as if it is I’m playing a farming game.</p>
+                </div>
+            </div>
+            <div class="testimony">
+                <img src="./assets/images/isaiah.png" alt="Profile picture">
+                <div class="testimony-content">
+                    <div>
+                        <div class="full-name">Isaiah Munoz</div>
+                        <div class="username">@i_munozReal</div>
+                    </div>
+                    <p>Nothing more satisfying than getting a Digiharv notification at the end of the day telling you that all tasks are GREEN.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="links">
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Download</h3>
+                    <ul>
+                        <li><a href="#">Windows</a></li>
+                        <li><a href="#">macOS</a></li>
+                        <li><a href="#">Linux</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">iOS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Digiharv</span>
+                <span>&copy; 2023 Digiharv All Rights Reserved.</span>
+            </div>
+        </footer>
+    </body>
+</html>
